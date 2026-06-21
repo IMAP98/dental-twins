@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  /* Colors from Design System */
+  --color-surface: #f5faf7;
+  --color-surface-dim: #d6dbd8;
+  --color-surface-bright: #f5faf7;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f5f2;
+  --color-surface-container: #eaefec;
+  --color-surface-container-high: #e4e9e6;
+  --color-surface-container-highest: #dee4e1;
+  
+  --color-on-surface: #171d1b;
+  --color-on-surface-variant: #3f4942;
+  
+  --color-primary: #005130;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #126b43;
+  --color-on-primary-container: #97e9b6;
+  --color-primary-fixed: #a2f4c1; /* Bright mint accent */
+  --color-on-primary-fixed: #002111;
+  
+  --color-secondary: #3c683d;
+  --color-on-secondary: #ffffff;
+  
+  /* Brand specific overrides based on visual */
+  --color-brand-dark: #0f3d24; /* Deep green for backgrounds */
+  --color-brand-mint: #a2f4c1; /* specific accent green */
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
